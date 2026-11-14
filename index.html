@@ -540,7 +540,6 @@ function render(){
           <button class="btn-outline" onclick="goHome()">← Volver</button>
         </div>
       </div>
-      ${meta.notice ? `<div class="cat-notice">🔒 <strong>Antes de empezar:</strong> ${meta.notice}</div>` : ''}
       <div class="level-wrap">${levelBarHTML()}</div>
       ${list.length ? `<div class="skills-grid">${list.map(skillCardHTML).join('')}</div>` : `<div class="empty-state">No hay skills de nivel ${state.level.toLowerCase()} en esta categoría.</div>`}`;
   }
